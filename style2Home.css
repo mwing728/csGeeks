@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(webbackground.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-bar{
+    background: transparent;
+    height: 60px;
+}
+
+
+.menu{
+    float: right;
+    list-style: none;
+    margin: 20px;
+}
+
+.menu li{
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    border: 1px solid white;
+}
+
+.menu li a:hover{
+    background: red;
+    transition: .4s;
+    color: #000;
+}
+
+.welcome{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+.avatar{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+}
+
+.ask{
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    border: 1px dashed black;
+    width: 15%;
+    position: absolute;
+    left: 43%;
+    top: 55%;
+
+}
+
+.ask a{
+    text-decoration: none;
+    color: white;
+    padding: -15px;
+}
+
+.ask a:hover{
+    color: red;
+}

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>CS Geek Registration</title>
+        <link rel = "stylesheet" type= "text/css" href = "style1Register.css">
+    </head>
+
+    <body>
+        <div class = "registrationbox">
+                <img src = "avatar.jpg" class = "avatar">
+                    <h1>Register for CS Geek!</h1>
+                    <form action = "registerPHP.php" method = post>                  
+                        <p>First Name</p>
+                        <input type = "text" name = "firstName" placeholder = "Enter first name" required>
+                        <p>Last Name</p>
+                        <input type = "text" name = "lastName" placeholder = "Enter last name"required>                    
+                        <p>MSU Username</p>
+                        <input type = "text" name = "username" placeholder = "Enter MSU Username" required><br>
+                        <p>Password</p>
+                        <input type = "password" name = "password" placeholder = "Enter password" required><br>
+                        <input type="radio" name="major" value="CS" checked> CS
+                        <input type="radio" name="major" value="IT"> IT<br><br>
+                        <input type="submit" value="Register">
+                    </form>
+            </div>
+
+    </body>
+</html>

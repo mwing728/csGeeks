@@ -1,0 +1,207 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(webbackground.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.avatar{
+    position: absolute;
+    bottom: -22%;
+    left: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+}
+
+header{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-bar{
+    background: transparent;
+    height: 60px;
+}
+
+.menu{
+    float: right;
+    list-style: none;
+    margin: 20px;
+}
+
+.menu li{
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    border: 1px solid white;
+}
+
+.menu li a:hover{
+    background: red;
+    transition: .4s;
+    color: #000;
+}
+
+p{
+    font-size: 15px;
+}
+
+h2{
+    font-size: 30px;
+    color: white;
+}
+
+h3{
+    font-size: 18px;
+    color: white;
+    position: absolute;
+<<<<<<< HEAD
+    top: 48%;
+=======
+    top: 54%;
+>>>>>>> fe6c5aa65ddb842d26338f7cebad26e854962fc4
+    left: 15%;
+}
+
+h4{
+    font-size: 18px;
+    color: white;
+    position: absolute;
+<<<<<<< HEAD
+    top: 48%;
+=======
+    top: 54%;
+>>>>>>> fe6c5aa65ddb842d26338f7cebad26e854962fc4
+    left: 55%;
+}
+
+
+.q_area{
+    position: absolute;
+<<<<<<< HEAD
+    top: 5%;
+    left: 40%;
+=======
+    top: 10%;
+    left: 15%;
+>>>>>>> fe6c5aa65ddb842d26338f7cebad26e854962fc4
+    color: white;
+}
+
+
+.q_area button:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.q_area button{
+    border: none;
+    outline: none;
+    height: 20px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 20px;
+}
+
+<<<<<<< HEAD
+.q_area input{
+=======
+.q_area input[type = "number"]{
+>>>>>>> fe6c5aa65ddb842d26338f7cebad26e854962fc4
+    background: transparent;
+    color: white;
+    border: 1px dashed yellow;
+}
+
+.q_area textarea{
+    background: transparent;
+    color: white;
+    border: 1px dashed yellow;
+    resize: none;
+}
+
+.q_box{
+    height: 400px;
+    width: 400px;
+    background: transparent;
+    color: white;
+    border: 1px dashed yellow;
+    position: absolute;
+<<<<<<< HEAD
+    top: 56%;
+=======
+    top: 61%;
+>>>>>>> fe6c5aa65ddb842d26338f7cebad26e854962fc4
+    left: 15%;
+    overflow: scroll;
+}
+
+.a_box{
+    height: 400px;
+    width: 400px;
+    background: transparent;
+    color: white;
+    border: 1px dashed yellow;
+    position: absolute;
+<<<<<<< HEAD
+    top: 56%;
+    left: 55%;
+    overflow: scroll;
+=======
+    top: 61%;
+    left: 55%;
+    overflow: scroll;
+}
+
+.a_area{
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    color: white;
+}
+
+
+.a_area button:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.a_area button{
+    border: none;
+    outline: none;
+    height: 20px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 20px;
+}
+
+.a_area input[type = "number"]{
+    background: transparent;
+    color: white;
+    border: 1px dashed yellow;
+}
+
+.a_area textarea{
+    background: transparent;
+    color: white;
+    border: 1px dashed yellow;
+    resize: none;
+>>>>>>> fe6c5aa65ddb842d26338f7cebad26e854962fc4
+}
