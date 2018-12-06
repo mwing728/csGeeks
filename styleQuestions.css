@@ -68,11 +68,7 @@ h3{
     font-size: 18px;
     color: white;
     position: absolute;
-<<<<<<< HEAD
-    top: 48%;
-=======
     top: 54%;
->>>>>>> fe6c5aa65ddb842d26338f7cebad26e854962fc4
     left: 15%;
 }
 
@@ -80,24 +76,15 @@ h4{
     font-size: 18px;
     color: white;
     position: absolute;
-<<<<<<< HEAD
-    top: 48%;
-=======
     top: 54%;
->>>>>>> fe6c5aa65ddb842d26338f7cebad26e854962fc4
     left: 55%;
 }
 
 
 .q_area{
     position: absolute;
-<<<<<<< HEAD
-    top: 5%;
-    left: 40%;
-=======
     top: 10%;
     left: 15%;
->>>>>>> fe6c5aa65ddb842d26338f7cebad26e854962fc4
     color: white;
 }
 
@@ -118,11 +105,7 @@ h4{
     border-radius: 20px;
 }
 
-<<<<<<< HEAD
-.q_area input{
-=======
 .q_area input[type = "number"]{
->>>>>>> fe6c5aa65ddb842d26338f7cebad26e854962fc4
     background: transparent;
     color: white;
     border: 1px dashed yellow;
@@ -142,11 +125,7 @@ h4{
     color: white;
     border: 1px dashed yellow;
     position: absolute;
-<<<<<<< HEAD
-    top: 56%;
-=======
     top: 61%;
->>>>>>> fe6c5aa65ddb842d26338f7cebad26e854962fc4
     left: 15%;
     overflow: scroll;
 }
@@ -158,11 +137,6 @@ h4{
     color: white;
     border: 1px dashed yellow;
     position: absolute;
-<<<<<<< HEAD
-    top: 56%;
-    left: 55%;
-    overflow: scroll;
-=======
     top: 61%;
     left: 55%;
     overflow: scroll;
@@ -203,5 +177,4 @@ h4{
     color: white;
     border: 1px dashed yellow;
     resize: none;
->>>>>>> fe6c5aa65ddb842d26338f7cebad26e854962fc4
 }
