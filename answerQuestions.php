@@ -6,10 +6,13 @@
         echo $e->getMessage();
     }
     $questionNum = $_POST['questionID'];
-    $message = $_POST['message'];
+    $message = $_POST['answer'];
     
     $query = "UPDATE questions SET answer = '{$message}' WHERE ID = '{$questionNum}'";
     $result = $conn->prepare($query);
     $result->execute();
 
 ?>
+<script type = "text/javascript">
+    location.assign("reloadableQuestionsPage.php");
+</script>

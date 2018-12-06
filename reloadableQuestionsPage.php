@@ -2,6 +2,17 @@
     <head>
         <title>CS Geek Question Forum</title>
         <link rel = "stylesheet" type= "text/css" href = "styleQuestions.css">
+        <script type = "text/javascript">
+            function pushToPreviousQuestions(){
+                location.assign("reloadableQuestionsPage.php");
+            }
+            function pushToAnswerQuestions(){
+                location.assign("answerQuestions.php");
+            }
+            function pushToInsertingQuestions(){
+                location.assign("insertingQuestions.php");
+            }
+        </script>
     </head>
 
     <body>
@@ -18,19 +29,23 @@
 
         <div class = "q_area">
             <h2>Post Your Questions Here!</h2>
-            <p>Ask questions on any CSIT related topic here:</p>
+            <p>Ask questions on any CSIT related topic:</p>
             <form action = "insertingQuestions.php" method = "post">
                 <textarea name = "message" rows="5" cols="30" placeholder="Enter question here...">
+                </textarea><br><br>
+                <button type="submit" value="Ask!">Ask Question</button><br>
+            </form>
+                <button type = "submit" value = "Refresh" onclick = pushToPreviousQuestions();>Refresh</button>
+        </div>
+        <div class = "a_area">
+            <form action = "answerQuestions.php" method ="post">
+                <h2>Answer Questions Here!</h2>
+                <p>Answer any previously asked questions:</p>
+                <textarea name = "answer" rows="5" cols="30" placeholder="Answer question here...">
                 </textarea><br>
-                <p>Enter the question number you would like to answer:</p>
-                <input type = "text" size = "32" placeholder="Enter question number..."><br><br>
-                <button type="submit" value="Ask!">Ask Question</button>
-            </form>
-            <form>
+                <p>Question Number:</p>
+                <input type = "number" size = "32" name = "questionID" placeholder="Enter question #..."><br><br>
                 <button type="submit" value="Answer Question!">Answer Question</button>
-            </form>
-            <form action = "previousQuestions.php" method = "post">
-                <button type = "submit" value = "Refresh">Refresh Previous Questions</button>
             </form>
         </div>
 
@@ -38,7 +53,7 @@
         <h4><i>View Previously Asnswered Questions:</i></h4>
 
         <div class = "q_box">
-             <?php
+            <?php
                 try {
                     $conn = new PDO('mysql:host=127.0.0.1;dbname=matthewwingdatabase', 'matthewwing', 'matthewwingpass');
                 }
@@ -50,9 +65,6 @@
                 $result = $conn->prepare($query);
                 $result->execute();
                 $answer = $result->fetch();
-                $number = "SELECT ID FROM questions ORDER BY ID DESC LIMIT 1";
-                $finish = $conn->prepare($number);
-                $getNumber = $finish->execute();
                 foreach($conn->query($query) as $row){
                     echo "Question " . $row['ID'] . ":" . $row['question'];
                     echo "<br>";
@@ -62,6 +74,23 @@
             ?>
         </div>
         <div class = "a_box">
+            <?php
+                try {
+                    $conn = new PDO('mysql:host=127.0.0.1;dbname=matthewwingdatabase', 'matthewwing', 'matthewwingpass');
+                }
+                catch(PDOException $e){
+                    echo $e->getMessage();
+                }
+                $query2 = "SELECT * from questions";
+                $result2 = $conn->prepare($query2);
+                $result->execute();
+                $answer2 = $result2->fetch();
+                foreach($conn->query($query2)as $row){
+                    echo "Answer " . $row['ID'] . ":" . $row['answer'];
+                    echo "<br>";
+                    echo "<br>";
+                }
+            ?>
         </div>
         </header>
     </body>

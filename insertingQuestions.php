@@ -15,3 +15,6 @@
     $insert = $conn->prepare($insertion);
     $insert->execute([$questionNumber, $message]);
 ?>
+<script type = "text/javascript">
+    location.assign("reloadableQuestionsPage.php");
+</script>
