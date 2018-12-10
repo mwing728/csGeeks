@@ -10,7 +10,7 @@
                 <ul class = "menu">
                     <li><a href = "home.html"> Home</a></li>
                     <li><a href = "csit.html"> CSIT Classes</a></li>
-                    <li><a href = "login.html"> Logout</a></li>
+                    <li><a href = "AlexEsposito.html"> Logout</a></li>
                 </ul>
             </div>
 
@@ -20,16 +20,31 @@
                 <h2>CSIT Classes</h2>
                     <p><strong><label>Select a class:</label></strong></p>
                     <form action = "csitPHP.php" method = post> 
-                        <select name="classes">
-                            <option value="Internet Computing">Internet Computing</option>
-                            <option value="Data Structures">Data Struc and Alg</option>
-                            <option value="Comp Programming">Computer Programming I and II</option>
-                            <option value="Comp Net">Computer Networks</option>
-                        
+                        <select name = "classes">
+                            <option value = "Internet Computing">Internet Computing</option>
+                            <option value = "Data Structures">Data Struc and Alg</option>
+                            <option value = "Comp Programming">Computer Programming I and II</option>
+                            <option value = "Comp Net">Computer Networks</option>
                         </select><br><br>
-                    <input type="submit" value="Geek Out!"><br>
+                    <input type = "submit" value = "Geek Out!"><br>
                </form>
-                    <a href = "questions.html">Ask a question!</a>
+                    <a href = "reloadableQuestionsPage.php">Ask a question!</a>
+           </div>
+
+           <div class = prof>
+                <h2>CSIT Professors</h2>
+                    <p><strong><label>Select a professor's faculty page you wish to view:</label></strong></p>
+                    <form action = "csitPHP.php" method = post>
+                        <select name = "professors">
+                            <option value = "Jingfu Jenq">Jingfu Jenq: CSIT337</option>
+                            <option value = "Boxiang Dong">Boxiang Dong: CSIT212</option>
+                            <option value = "Herman Dolezal">Herman Dolezal: CSIT111/112</option>
+                            <option value = "Dawei Li">Dawei Li: CSIT340</option>
+                            <option value = "Hongbo Zhou">Hongbo Zhou: CSIT335</option>
+                        </select><br><br>
+                            <input type = "submit" value = "Check Em Out!">
+                    </form>
+                    <a href = "reloadableQuestionsPage.php">Ask a question!</a>
            </div>
         <!--<form action = "https://www.w3schools.com/html/">
             <form action = "http://bigocheatsheet.com/">
