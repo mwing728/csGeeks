@@ -6,6 +6,7 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    overflow: auto;
 }
 
 header{
@@ -61,7 +62,7 @@ h2{
     background: transparent;
     color: #fff;
     position: absolute;
-    left: 50%;
+    left: 30%;
     top: 50%;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
@@ -101,4 +102,44 @@ h2{
     width: 100px;
     height: 100px;
     border-radius:50%;
+}
+
+.prof{
+    text-align: center;
+    width: 340px;
+    height: 320px;
+    background: transparent;
+    color: #fff;
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+
+.prof a{
+    text-decoration: none;
+    color: white;
+}
+
+.prof a:hover{
+    color: red;
+    
+}
+
+.prof input:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.prof input{
+    border: none;
+    outline: none;
+    height: 20px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 20px;
 }
