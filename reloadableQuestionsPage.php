@@ -45,7 +45,8 @@
                 </textarea><br>
                 <p>Question Number:</p>
                 <input type = "number" size = "32" name = "questionID" placeholder="Enter question #..."><br><br>
-                <button type="submit" value="Answer Question!">Answer Question</button>
+                <button type="submit" value="Answer Question!">Answer Question</button><br><br>
+                <button type = "submit" value = "Delete Question">Delete Question</button>
             </form>
         </div>
 
