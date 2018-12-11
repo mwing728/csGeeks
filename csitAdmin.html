@@ -1,0 +1,57 @@
+
+<html>
+    <head>
+        <title>CS Geek Classes</title>
+        <link rel = "stylesheet" type= "text/css" href = "style3CSIT.css">
+    </head>
+
+    <body style = overflow: visible;>
+        <header>
+            <div class = "nav-bar">
+                <ul class = "menu">
+                    <li><a href = "homeAdmin.html"> Home</a></li>
+                    <li><a href = "csitAdmin.html"> CSIT Classes</a></li>
+                    <li><a href = "AlexEsposito.html"> Logout</a></li>
+                </ul>
+            </div>
+
+            <img src = "avatar.jpg" class = "avatar">
+
+           <div class = drop>
+                <h2>CSIT Classes</h2>
+                    <p><strong><label>Select a class:</label></strong></p>
+                    <form action = "csitPHP.php" method = post> 
+                        <select name="classes">
+                            <option value="Internet Computing">Internet Computing</option>
+                            <option value="Data Structures">Data Struc and Alg</option>
+                            <option value="Comp Programming">Computer Programming I and II</option>
+                            <option value="Comp Net">Computer Networks</option>
+                        
+                        </select><br><br>
+                    <input type="submit" value="Geek Out!"><br>
+               </form>
+                    <a href = "reloadableQuestionsPageAdmin.php">Ask a question!</a>
+           </div>
+            <div class = prof>
+                <h2>CSIT Professors</h2>
+                    <p><strong><label>Select a professor's faculty page you wish to view:</label></strong></p>
+                    <form action = "csitTeachers.php" method = post>
+                        <select name = "professors">
+                            <option value = "Jingfu Jenq">Jingfu Jenq: CSIT337</option>
+                            <option value = "Boxiang Dong">Boxiang Dong: CSIT212</option>
+                            <option value = "Herman Dolezal">Herman Dolezal: CSIT111/112</option>
+                            <option value = "Dawei Li">Dawei Li: CSIT340</option>
+                            <option value = "Hongbo Zhou">Hongbo Zhou: CSIT335</option>
+                        </select><br><br>
+                            <input type = "submit" value = "Check Em Out!">
+                    </form>
+                    <a href = "reloadableQuestionsPageAdmin.php">Ask a question!</a>
+           </div>
+        <!--<form action = "https://www.w3schools.com/html/">
+            <form action = "http://bigocheatsheet.com/">
+            <form action = "https://www.w3schools.com/java/default.asp">
+            <form action = "https://www.youtube.com/watch?v=JvXro0dzJY8&list=PLdFppKg4UodjGN8nAhojxWyncoEdwTfqf">
+        -->
+        </header>
+    </body>
+</html>

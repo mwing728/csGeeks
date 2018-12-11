@@ -4,13 +4,13 @@
         <link rel = "stylesheet" type= "text/css" href = "styleQuestions.css">
         <script type = "text/javascript">
             function pushToPreviousQuestions(){
-                location.assign("reloadableQuestionsPage.php");
+                location.assign("reloadableQuestionsPageAdmin.php");
             }
             function pushToAnswerQuestions(){
-                location.assign("answerQuestions.php");
+                location.assign("answerQuestionsAdmin.php");
             }
             function pushToInsertingQuestions(){
-                location.assign("insertingQuestions.php");
+                location.assign("insertingQuestionsAdmin.php");
             }
         </script>
     </head>
@@ -19,8 +19,8 @@
         <header>
             <div class = "nav-bar">
                 <ul class = "menu">
-                    <li><a href = "home.html"> Home</a></li>
-                    <li><a href = "csit.html"> CSIT Classes</a></li>
+                    <li><a href = "homeAdmin.html"> Home</a></li>
+                    <li><a href = "csitAdmin.html"> CSIT Classes</a></li>
                     <li><a href = "AlexEsposito.html"> Logout</a></li>
                 </ul>
             </div>
@@ -30,7 +30,7 @@
         <div class = "q_area">
             <h2>Post Your Questions Here!</h2>
             <p>Ask questions on any CSIT related topic:</p>
-            <form action = "insertingQuestions.php" method = "post">
+            <form action = "insertingQuestionsAdmin.php" method = "post">
                 <textarea name = "message" rows="5" cols="30" placeholder="Enter question here...">
                 </textarea><br><br>
                 <button type="submit" value="Ask!">Ask Question</button><br>
@@ -38,14 +38,15 @@
                 <button type = "submit" value = "Refresh" onclick = pushToPreviousQuestions();>Refresh</button>
         </div>
         <div class = "a_area">
-            <form action = "answerQuestions.php" method ="post">
+            <form action = "answerQuestionsAdmin.php" method ="post">
                 <h2>Answer Questions Here!</h2>
                 <p>Answer any previously asked questions:</p>
                 <textarea name = "answer" rows="5" cols="30" placeholder="Answer question here...">
                 </textarea><br>
                 <p>Question Number:</p>
                 <input type = "number" size = "32" name = "questionID" placeholder="Enter question #..."><br><br>
-                <button type="submit" value="Answer Question!">Answer Question</button><br><br>
+                <button name = "answerquestion" type="submit" value="Answer Question!">Answer Question</button><br><br>
+                <button name = "delete" type = "submit" value = "Delete">Delete</button>
             </form>
         </div>
 

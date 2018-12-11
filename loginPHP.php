@@ -11,7 +11,6 @@
         
         try {
             $conn = new PDO('mysql:host=127.0.0.1;dbname=matthewwingdatabase', 'matthewwing', 'matthewwingpass');
-            echo "Connection is successful" . "<br>";
         }
             catch(PDOException $e){
                 echo $e->getMessage();
@@ -29,7 +28,7 @@
     }
     else{
         echo"<script>alert('Invalid Username and Password')</script>";
-        echo"<script>location.assign('login.html')</script>";
+        echo"<script>location.assign('AlexEsposito.html')</script>";
         
     }
     ?>

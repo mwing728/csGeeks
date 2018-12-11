@@ -6,16 +6,23 @@
         echo $e->getMessage();
     }
     
-     $questionNum = $_POST['questionID'];
+    if(isset($_POST['answerquestions'])){
+    $questionNum = $_POST['questionID'];
     $message = $_POST['answer'];
     
     $query = "UPDATE questions SET answer = '{$message}' WHERE ID = '{$questionNum}'";
     $result = $conn->prepare($query);
     $result->execute();   
-    
+    }
+    else if(isset($_POST['delete'])){
+        $questionNum2 = $_POST['questionID'];
+        $query2 = "DELETE FROM questions WHERE ID = '{$questionNum2}'";
+        $result2 = $conn->prepare($query2);
+        $result2->execute();
+    }
     
 
 ?>
 <script type = "text/javascript">
-    location.assign("reloadableQuestionsPage.php");
+    location.assign("reloadableQuestionsPageAdmin.php");
 </script>

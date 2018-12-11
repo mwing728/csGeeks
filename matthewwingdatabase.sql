@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 10, 2018 at 06:05 AM
+-- Generation Time: Dec 11, 2018 at 08:23 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.1.22
 
@@ -25,21 +25,34 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `admin`
+--
+CREATE database matthewwingdatabase;
+CREATE TABLE `admin` (
+  `First` text NOT NULL,
+  `Last` text NOT NULL,
+  `Username` mediumtext NOT NULL,
+  `Password` mediumtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`First`, `Last`, `Username`, `Password`) VALUES
+('Matthew ', 'Wing', 'wingm1', 'cs123');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `questions`
 --
-CREATE DATABASE matthewwingdatabase;
+
 CREATE TABLE `questions` (
   `ID` int(100) NOT NULL,
   `question` mediumtext NOT NULL,
   `answer` mediumtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `questions`
---
-
-INSERT INTO `questions` (`ID`, `question`, `answer`) VALUES
-(1, 'Is Computer Science important?                ', 'Extremely!                ');
 
 -- --------------------------------------------------------
 
@@ -63,9 +76,9 @@ INSERT INTO `registration` (`firstName`, `lastName`, `username`, `pass`) VALUES
 ('', '', '', ''),
 ('Alex', 'Esposito', 'espositoa1', '1234'),
 ('John ', 'Smith', 'smithj1', 'smith'),
-('rob', 'gronk', 'gronkr1@montclair.edu', 'patriots87');
+('rob', 'gronk', 'gronkr1@montclair.edu', 'patriots87'),
+('John', 'Doe', 'doej1', '123');
 COMMIT;
-
 GRANT SELECT, INSERT, DELETE, UPDATE
 ON matthewwingdatabase
 TO matthewwing@localhost
