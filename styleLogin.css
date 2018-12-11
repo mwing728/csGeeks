@@ -15,7 +15,7 @@ body{
     background: transparent;
     color: #fff;
     position: absolute;
-    left: 50%;
+    left: 30%;
     top: 50%;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
@@ -87,4 +87,65 @@ h1{
 }
 ::placeholder{
     color:white;
+}
+
+
+
+.admin p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.admin input{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.admin input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.admin input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.admin input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.admin{
+    width: 320px;
+    height: 420px;
+    background: transparent;
+    color: #fff;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.a{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
 }
