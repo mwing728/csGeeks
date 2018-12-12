@@ -21,7 +21,7 @@
                 <ul class = "menu">
                     <li><a href = "home.html"> Home</a></li>
                     <li><a href = "csit.html"> CSIT Classes</a></li>
-                    <li><a href = "AlexEsposito.html"> Logout</a></li>
+                    <li><a href = "index.html"> Logout</a></li>
                 </ul>
             </div>
 

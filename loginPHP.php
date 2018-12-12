@@ -28,7 +28,7 @@
     }
     else{
         echo"<script>alert('Invalid Username and Password')</script>";
-        echo"<script>location.assign('AlexEsposito.html')</script>";
+        echo"<script>location.assign('index.html')</script>";
         
     }
     ?>
