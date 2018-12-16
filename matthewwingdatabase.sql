@@ -80,7 +80,7 @@ INSERT INTO `registration` (`firstName`, `lastName`, `username`, `pass`) VALUES
 ('John', 'Doe', 'doej1', '123');
 COMMIT;
 GRANT SELECT, INSERT, DELETE, UPDATE
-ON matthewwingdatabase
+ON matthewwingdatabase.*
 TO matthewwing@localhost
 IDENTIFIED BY 'matthewwingpass';
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
